@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Mayadah</title> 
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+            font-family: Arial, sans-serif;
+            padding: 5%;
+        }
+        .continer{
+            display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 7%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+        }
+        .right-column, .left-column, .skills, .edu, .exp, .volu, .cert, .projects{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+
+        }
+      
+        .contact {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-top: 5%;
+            font-size: 0.9em;
+        }
+        .subtitle{
+            font-weight: 700;
+            text-align: center;
+        }
+        .name{
+            font-weight: 800;
+            text-align: center;
+        }
+        .contact li {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .contact svg {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .summ p {
+            margin-top: 10px;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+</style>
+<body>
+    <div id="root"></div>
+
+    
+ 
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- babel CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="main.js"></script>
+</body>
+
+</html>
